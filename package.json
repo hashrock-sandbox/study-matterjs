@@ -1,0 +1,21 @@
+{
+  "name": "study-matter-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "matter-js": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:js": "browserify ${npm_package_config_src_js} > ${npm_package_config_dist_js}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:js": "watchify ${npm_package_config_src_js} -o ${npm_package_config_dist_js} -dv"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "src_js": "main.js",
+    "dist_js": "bundle.js"
+  }
+}
